@@ -18,13 +18,13 @@ fake = Faker()
 # 生成管理员用户，设置 confired=True
 def fake_admin():
     admin = Admin(
-        username='baodongyue',
+        username='admin',
         blog_title='MSKJ',
         blog_sub_title="Welcome to NLP of MSKJ.",
         name='MSKJ',
         about='你好，此处是民生科技NLP组资源分享站。'
     )
-    admin.set_password('baodongyue@123')
+    admin.set_password('12345')
     # set confirmed=True
     admin.set_confirmed(True)
     db.session.add(admin)
@@ -32,17 +32,17 @@ def fake_admin():
 
 def fake_xc():
     xuchao = Admin(
-        username = 'xuchaonet'
+        username = 'test1'
     )
-    xuchao.set_password('iamxuchao@mskj')
+    xuchao.set_password('12345')
     db.session.add(xuchao)
     db.session.commit()
 
 def fake_bdy():
     baodongyue = Admin(
-        username = 'bdy'
+        username = 'test2'
     )
-    baodongyue.set_password('baodongyue@123')
+    baodongyue.set_password('12345')
     db.session.add(baodongyue)
     db.session.commit()
 
