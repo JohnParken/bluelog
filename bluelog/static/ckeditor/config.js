@@ -37,7 +37,7 @@ CKEDITOR.editorConfig = function( config ) {
 	// Simplify the dialog windows.
 	config.removeDialogTabs = 'image:advanced;link:advanced';
 
-	config.extraPlugins = 'markdown';  // this is the point!
+	//config.extraPlugins = 'uploadbutton';  // this is the point!
 	config.extraPlugins = 'codesnippet';
 	codeSnippet_theme: 'google';
 };

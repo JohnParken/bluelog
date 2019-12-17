@@ -131,7 +131,7 @@ def fake_comments(count=500):
 
 
 def fake_links():
-    民生科技有限公司 = Link(name='民生科技有限公司', url='http://www.mskj.com')
-    中国民生银行 = Link(name='中国民生银行', url='http://www.cmbc.com.cn')
-    db.session.add_all([民生科技有限公司, 中国民生银行])
+    FaceBook = Link(name='FaceBook', url='http://www.facebook.com')
+    Google = Link(name='Google', url='http://www.google.com')
+    db.session.add_all([Google, FaceBook])
     db.session.commit()
